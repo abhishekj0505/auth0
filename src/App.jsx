@@ -11,27 +11,21 @@ function App() {
       <h1>Auth0 Implementation</h1>
       {user ? (
         <>
-          {isLoading ? (
-            <h1>Loading.........</h1>
-          ) : (
-            <>
-              <div>
-                Hello <span style={{ color: "brown" }}>{user.name}</span>, How
-                are you doing?
-              </div>
-              <div style={{ marginTop: "20px" }}>
-                Click the button below to logout.
-              </div>
-              <button
-                onClick={() => {
-                  logout();
-                }}
-                style={{ marginTop: "20px" }}
-              >
-                Logout
-              </button>
-            </>
-          )}
+          <div>
+            Hello <span style={{ color: "brown" }}>{user.name}</span>, How are
+            you doing?
+          </div>
+          <div style={{ marginTop: "20px" }}>
+            Click the button below to logout.
+          </div>
+          <button
+            onClick={() => {
+              logout();
+            }}
+            style={{ marginTop: "20px" }}
+          >
+            Logout
+          </button>
         </>
       ) : (
         <>
