@@ -29,7 +29,7 @@ function App() {
         </>
       ) : (
         <>
-          <div>Login with you email-id or your social accounts.</div>
+          <div>Login with your email-id or your social handles.</div>
           <button
             onClick={() => {
               loginWithRedirect();
