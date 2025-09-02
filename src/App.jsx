@@ -13,7 +13,7 @@ function App() {
         <>
           <div>
             Hello <span style={{ color: "brown" }}>{user.name}</span>, How are
-            doing?
+            you doing?
           </div>
           <div style={{ marginTop: "20px" }}>
             Click the button below to logout.
@@ -29,7 +29,7 @@ function App() {
         </>
       ) : (
         <>
-          <div>Login to see magic.</div>
+          <div>Login with you email-id or your social accounts.</div>
           <button
             onClick={() => {
               loginWithRedirect();
